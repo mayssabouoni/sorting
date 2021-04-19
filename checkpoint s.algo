@@ -1,0 +1,24 @@
+FUNCTION insert_sort(arr : ARRAY_OF INTEGER) : INTEGER
+VAR
+    i, key, j, n : INTEGER;
+BEGIN
+     n := arr.length;
+   
+
+    FOR (i = 1; i < n; i++)
+    key = arr[ i ];
+    j = i — 1;
+  while ( j >= 0 and arr[ j ] > key)
+  
+   arr[ j+1] = arr[ j ];
+   j = j — 1;
+  END while
+  arr[j+1] = key;
+
+END_FOR
+END
+
+
+
+
+    
